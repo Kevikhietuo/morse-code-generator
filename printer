@@ -1,0 +1,7 @@
+using namespace std;
+
+void printMorse(vector<string> morseVal){
+    for (int i = 0; i < morseVal.size(); ++i){
+        cout << morseVal[i];
+    }
+}

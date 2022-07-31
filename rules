@@ -1,0 +1,7 @@
+void printRules(){
+    std::cout << "###################################################" << std::endl;
+    std::cout << "\tDISCLAIMER" << std::endl;
+    std::cout << "1. NO SYMBOLS ALLOWED" << std::endl;
+    std::cout << "2. SPACES ARE REPRESENTED BY '/'" << std::endl;
+    std::cout << "3. EACH ALPHABET IS SEPARATED BY A SPACE" << std::endl;
+}

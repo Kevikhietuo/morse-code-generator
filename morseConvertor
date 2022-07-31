@@ -1,0 +1,26 @@
+#include "morser"
+
+using namespace std;
+vector<string> convertToMorse(string input1){
+    vector<string> morseCode;
+
+    //loading morse codes
+    unordered_map <char, string> morseMap = morseMapper();
+
+    //converting to uppercase
+    string input = "";
+    for (int i = 0; i < input1.size(); ++i){
+        if(islower(input1[i])) input.push_back(toupper(input1[i]));
+        else input.push_back(input1[i]);
+    }
+
+    for (int i = 0; i < input.size(); ++i){
+        if(morseMap.find(input[i]) != morseMap.end()){ 
+            morseCode.push_back(morseMap[input[i]]);
+            morseCode.push_back(" ");
+        }
+
+    }
+
+    return morseCode;
+}

@@ -1,0 +1,11 @@
+using namespace std;
+
+void initiateBeeper(vector<string> morseVal){
+    for (int i = 0; i < morseVal.size(); ++i) {
+        for(char sym : morseVal[i]){
+            if (sym == '.') Beep(800, 200);
+            else if (sym == '-') Beep(800, 800);
+        }
+        Sleep(800);
+    }
+}

@@ -1,0 +1,12 @@
+using namespace std;
+
+int requestBeep() {
+    char choice;
+    cout << endl << "DO YOU WISH TO HEAR YOUR MESSAGE IN MORSE CODE?" << endl;
+    cout << "enter 'y' for YES and 'n' for NO  =  ";
+    cin >> choice;
+    if (choice == 'y' || choice == 'Y'){
+        return 1;
+    }
+    return 0;
+}

@@ -1,0 +1,8 @@
+using namespace std;
+
+string userInput(){
+    cout << endl << "ENTER YOUR INPUT: " << endl;
+    string inputString;
+    cin >> inputString;
+    return inputString;
+}

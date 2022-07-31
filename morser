@@ -1,0 +1,49 @@
+using namespace std;
+
+unordered_map<char, string> morseMapper(){
+    unordered_map<char, string> morseMap;
+
+    morseMap.insert({'A', ".-"});
+    morseMap.insert({'B', "-..."});
+    morseMap.insert({'C', "-.-."});
+    morseMap.insert({'D', "-.."});
+    morseMap.insert({'E', "."});
+    morseMap.insert({'F', "..-."});
+    morseMap.insert({'G', "--."});
+    morseMap.insert({'H', "...."});
+    morseMap.insert({'I', ".."});
+    morseMap.insert({'J', ".---"});
+    morseMap.insert({'K', "-.-"});
+    morseMap.insert({'L', ".-.."});
+    morseMap.insert({'M', "--"});
+    morseMap.insert({'N', "-."});
+    morseMap.insert({'O', "---"});
+    morseMap.insert({'P', ".--."});
+    morseMap.insert({'Q', "--.-"});
+    morseMap.insert({'R', ".-."});
+    morseMap.insert({'S', "..."});
+    morseMap.insert({'T', "-"});
+    morseMap.insert({'U', "..-"});
+    morseMap.insert({'V', "...-"});
+    morseMap.insert({'W', ".--"});
+    morseMap.insert({'X', "-..-"});
+    morseMap.insert({'Y', "-.--"});
+    morseMap.insert({'Z', "--.."});
+
+    morseMap.insert({'1', ".----"});
+    morseMap.insert({'2', "..---"});
+    morseMap.insert({'3', "...--"});
+    morseMap.insert({'4', "....-"});
+    morseMap.insert({'5', "....."});
+    morseMap.insert({'6', "-...."});
+    morseMap.insert({'7', "--..."});
+    morseMap.insert({'8', "---.."});
+    morseMap.insert({'9', "----."});
+    morseMap.insert({'0', "-----"});
+    
+    morseMap.insert({' ', "/"}); 
+       
+
+    return morseMap;
+
+}
